@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo h1 {
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #bb3d3d;
+    text-decoration: none;
+    font: 18px;
+    padding: 10px 20px;
+}
+.menu a:hover {
+    background-color: #fff;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+}
+
+/* hero section*/
+
+.hero {
+    height: 100vh;
+    background: url() no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+.hero-content {
+    max-width: 600px;
+
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Planos section */
+
+.planos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.plano {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+
+}
+
+.plano h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plano p{
+    margin: 10px 0;
+}
+
+/* sobre section */
+
+.sobre {
+padding: 50px 20px;
+text-align: center;
+
+}
+
+.sobre img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Contato section*/
+.contato {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+.info-contato{
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+.info-contato p {
+    margin: 10px 0;
+}
+.info-contato a {
+    color: #333;
+    text-decoration: none;
+}
+
+.info-contato a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+
+}
+
+/*responsividade */
+
+@media (max-width: 768px) {
+    .planos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plano {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .hero h2{
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
